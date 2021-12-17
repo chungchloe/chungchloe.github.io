@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
+    <meta property="og:title" content="chloe chung">
+    <meta property="og:type" content="graphic.design">
+    <meta property="og:profile:first_name" content="chloe">
+    <meta property="og:url" content="https://www.chungchloe.com">
+    <meta property="og:image" content="https://www.chungchloe.com/images/meta-logo.png">
+    <title>chloe chung - designer, developer</title>
+
+    <!--Icon-->
+    <link rel="icon" href="https://chungchloe.com/images/logo-small-white.png">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--HTML shiv-->
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+
+    <!--jQuery library -->
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        function moveScreen(menuName) {
+            $('html , body').animate({
+                scrollTop: $('#' + menuName).offset().top
+            }, 1000);
+        }
+    </script>-->
+
+    <!-- Adds CSS3 Media Queries to older browsers such as IE5+ -->
+    <script src="js/css3-mediaqueries.js"></script>
+</head>
+
+<body>
+    <!--Wrapper-->
+    <div id="wrapper">
+
+        <!--Navigation-->
+        <nav class="global-nav">
+            <ul>
+                <li><a class="home-link" href="https://chungchloe.com">chloe chung</a></li>
+                <li><a class="mobile-home-link" href="https://chungchloe.com"><img src="images/logo-small.png"
+                            alt="the main logo for the website which links to the home page"></a></li>
+                <li><a class="nav-link" href="#about">about</a></li>
+                <li><a class="nav-link" href="#work">work</a></li>
+                <li><a class="nav-link" href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <!--Navigation End-->
+
+        <!--HOME-->
+        <section id="home">
+            <!--Canvas Element-->
+            <div id="canvasWrap" class="canvasWrap">
+                <div class="homepage-headings">
+                    <h1>CHLOE CHUNG</h1>
+                    <h2>Designer / Developer</h2>
+                </div>
+
+                <!--TweenMax Canvas-->
+                <canvas id="myCanvas"></canvas>
+            </div>
+        </section>
+
+        <!--ABOUT-->
+        <section id="about">
+            <div class="container">
+                <h1>Hello,</h1>
+                <p class="about-text">I'm Chloe Chung, a designer/developer whose endeavours are to help find visual and
+                    brand identity, build functional and beautiful websites, and make effective motion graphics.</p>
+                <div class="about-links">
+                    <button class="square-button"><a class="button-link"
+                            href="http://chungchloe.com/chungchloe-resume.pdf">Resume</a></button>
+                    <button class="square-button"><a class="button-link"
+                            href="https://www.linkedin.com/in/chloeychung/">LinkedIn</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!--Separator-->
+        <span class="separator"></span>
+
+        <!--WORK-->
+        <section id="work">
+            <div class="container">
+                <h1>Work</h1>
+                <div class="main-work-box">
+
+                    <!--Humber College-->
+                    <div class="work-box">
+                        <a class="work-visual" href="http://southetobicokeha.com"><img src="images/humber-website.jpg"
+                                alt="Humber College's Housing Affordability Project website"></a>
+                        <div class="work-blurb">
+                            <h2>Humber College's Website for Affordable Housing</h2>
+                            <p>Designed and developed a website that represents and supports the affordable housing
+                                project at Humber College.</p>
+                            <a class="work-link"
+                                aria-label="See the prototype of Humber College's Affordable Housing Project website"
+                                href="https://www.figma.com/proto/a6vBkIbx57V78wkDdVcfsG/South-Etobicoke-Housing-Affordability?node-id=136%3A0&scaling=min-zoom">
+                                <h3>View prototype</h3>
+                            </a>
+                            <a class="work-link" aria-label="Go to Humber College's Affordable Housing Project website"
+                                href="http://southetobicokeha.com">
+                                <h3>View website</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--JCreated-->
+                    <div class="work-box column-reverse">
+                        <div class="work-blurb">
+                            <h2>JCreated</h2>
+                            <p>A videographer and photographer, Jae Sung Lee, came for the website design that would
+                                represent his work and style accurately. HTML and CSS was used to build the website.</p>
+                            <a class="work-link" aria-label="Visit the Jcreated.ca website"
+                                href="https://chungchloe.com/jcreated/">
+                                <h3>Visit website</h3>
+                            </a>
+                        </div>
+                        <a class="work-visual" href="https://chungchloe.com/jcreated/">
+                            <video poster="https://chungchloe.com/images/jcreated.jpg" playsinline="true" autoplay muted
+                                loop src="https://chungchloe.com/images/jcreated.mp4">
+                                <source src="https://chungchloe.com/images/jcreated.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                    </div>
+
+                    <!--InterVarsity-->
+                    <div class="work-box">
+                        <a class="work-visual" href="ivcf.html"><img src="images/donation-platform.jpg"
+                                alt="A screenshot of InterVarsity's Find a Campus page"></a>
+                        <div class="work-blurb">
+                            <h2>InterVarsity Christian Fellowship</h2>
+                            <p>Maintained more than 10 websites, built new pages to serve all ministries, and redesigned
+                                existing pages, which increased the page visits by more than 90%. Currently working on
+                                making the websites accessible - compliant to the AODA principles.</p>
+                            <a class="work-link" aria-label="View details about the website work for InterVarsity"
+                                href="ivcf.html">
+                                <h3>View details</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Upon This Love-->
+                    <div class="work-box column-reverse">
+                        <div class="work-blurb">
+                            <h2>Upon This Love Logo Design</h2>
+                            <p>A wedding planning comapny, Upon This Love, was looking for a brand identity and logo
+                                design. Worked closely with the owner to make sure that the logo precisely represents
+                                the company's style and missions.</p>
+                            <a class="work-link" aria-label="View details about Upon This Love logo design"
+                                href="utl.html">
+                                <h3>View details</h3>
+                            </a>
+                        </div>
+                        <a class="work-visual" href="utl.html"><img src="images/upon-this-love.png"
+                                alt="Logo design for Upon This Love"></a>
+                    </div>
+
+                    <!--Motion Graphics-->
+                    <div class="work-box">
+                        <a class="work-visual" href="motion.html">
+                            <video poster="https://chungchloe.com/images/nhf.jpg" playsinline="true" autoplay muted loop
+                                src="https://chungchloe.com/images/nhf.mp4">
+                                <source src="https://chungchloe.com/images/nhf.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                        <div class="work-blurb">
+                            <h2>Motion Graphics</h2>
+                            <p>Various motion graphics work made with After Effects done to provide effecitve
+                                storytelling or user interaction demonstration.</p>
+                            <a class="work-link" aria-label="View details about the motion graphics work"
+                                href="motion.html">
+                                <h3>View details</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Codepen-->
+                    <div class="work-box column-reverse">
+                        <div class="work-blurb">
+                            <h2>Codepen</h2>
+                            <p>Some development exercises to keep them skills polished.</p>
+                            <a class="work-link" href="https://codepen.io/chungchloe">
+                                <h3>Let's see what Chloe wrote!</h3>
+                            </a>
+                        </div>
+                        <img class="work-visual" src="images/codepen.jpg"
+                            alt="An illustration of a character done with CSS on Codepen">
+                    </div>
+
+                    <!--Dribbble-->
+                    <div class="work-box">
+                        <a class="work-visual" href="https://dribbble.com/chungchloe"><img src="images/polygon.jpg"
+                                alt="A polygon portrait illustration"></a>
+                        <div class="work-blurb">
+                            <h2>Dribbble</h2>
+                            <p>Some design exercises to keep them skills polished. Click
+                                below links to see them.</p>
+                            <a class="work-link" href="https://dribbble.com/chungchloe">
+                                <h3>Yes, I will see your Dribbble posts</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Container END-->
+            </div>
+
+            <!--Separator-->
+            <span class="separator"></span>
+
+        </section>
+
+        <!--Contact-->
+        <section id="contact">
+            <div class="container">
+                <h1 class="contact-header">Let's Get In Touch.</h1>
+                <h2 class="contact-subheader">Are you looking for a freelancer, or want to work together on a project?
+                    Let's talk!</h2>
+                <form class="contact-form" id="contact-form" action="https://formspree.io/chungchloe@pm.me"
+                    method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="name" aria-label="Type name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" placeholder="email" aria-label="Type email">
+
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="message" aria-label="Type message">
+
+                    <input type="submit" id="submit" value="submit">
+                </form>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <div class="footer">
+            <footer>
+                <p>Copyright &copy; Chloe Chung 2020</p>
+            </footer>
+        </div>
+
+        <!--TweenMAx JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+        <!--JavaScript: Background Animation-->
+        <script src="js/custom.js"></script>
+
+    </div>
+    <!--Wrapper End-->
+</body>
+
+</html>

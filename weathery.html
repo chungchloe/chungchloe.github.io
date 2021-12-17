@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
+    <meta property="og:title" content="chloe chung">
+    <meta property="og:type" content="graphic.design">
+    <meta property="og:profile:first_name" content="chloe">
+    <meta property="og:url" content="http://www.chungchloe.com">
+    <meta property="og:image" content="http://www.chungchloe.com/images/meta-logo.png">
+    <title>chloe chung - designer</title>
+
+    <!--Icon-->
+    <link rel="icon" href="http://chungchloe.com/images/logo-small-white.png">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--HTML shiv-->
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+
+    <!--TweenMAx JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <!-- Adds CSS3 Media Queries to older browsers such as IE5+ -->
+    <script src="js/css3-mediaqueries.js"></script>
+
+    <!--jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        function moveScreen(menuName) {
+            $('html , body').animate({
+                scrollTop: $('#' + menuName).offset().top
+            }, 1000);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <!--WRAPPER-->
+    <div id="wrapper">
+
+        <!--Navigation-->
+        <nav class="global-nav">
+            <ul>
+                <li><a class="home-link" href="http://chungchloe.com">chloe chung</a></li>
+                <li><a class="mobile-home-link" href="http://chungchloe.com"><img src="images/logo-small.png"
+                            alt="the main logo for the website which links to the home page"></a></li>
+                <li><a class="nav-link" href="index.html#about">about</a></li>
+                <li><a class="nav-link" href="index.html#work">work</a></li>
+                <li><a class="nav-link" href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+        <!--Navigation End-->
+
+        <!--ABOUT-->
+        <section id="description">
+
+            <div class="description-container">
+
+                <h2>Weathery: Watch Interface</h2>
+                <h3>A SmartWatch Interface made with Illustrator and After Effects</h3>
+
+                <p>It is easy to forget what temperature, or what kind of weather it was supposed to be today. Weathery,
+                    the weather watch interface will never let you walk in the snow with your new pair of shoes on.</p>
+
+                <!--Video-->
+                <video poster="http://chungchloe.com/images/weathery.jpg" playsinline="true" autoplay muted loop
+                    src="http://chungchloe.com/images/weathery-full.mp4">
+                    <source src="http://chungchloe.com/images/weathery-full.mp4" type="video/mp4">
+                </video>
+
+                <p>Having numbers can help, but it is not as efficient as the visuals. Weathery shows you the current
+                    weather, and the weather in the near future on your watch screen.</p>
+
+                <!--Video-->
+                <video poster="http://chungchloe.com/images/weathery.jpg" playsinline="true" autoplay muted loop
+                    src="http://chungchloe.com/images/weathery-temp.mp4">
+                    <source src="http://chungchloe.com/images/weathery-temp.mp4" type="video/mp4">
+                </video>
+
+                <p>But of course, numbers do matter. You never know if it is going to be extremely cold under a sunny
+                    sky. On Weathery, you can just tap on the screen to see the temperature and the date.</p>
+
+                <p>I am that kind of person who always forgets to check the weather, and end up with soaked Converse by
+                    the time I get home. So I thought, "Wouldn't it be nice if I could check the time and the weather at
+                    the same time?"</p>
+
+                <img class="weathery-ui" src="images/weathery-flat.png"
+                    alt="The first design of the Weathery watch interface">
+
+                <p>The first time I came up with this interface, I was thinking of a "flat UI design". By "flat", I mean
+                    not much depth and no shadows. So I included zero drop shadow, and a little opacity change in the
+                    clouds. When I was done, I realized that this interface looked banal - almost like a child's
+                    drawing.</p>
+
+                <img class="weathery-ui" src="images/weathery-day.png"
+                    alt="The final design of the weathery watch interface">
+
+                <p class="para">That is why I started playing with drop shadows and gradients. The sun needed to look
+                    more like the sun, and the clouds needed to look more like clouds.</p>
+
+                <img class="weathery-ui" src="images/weathery_night-dark.png"
+                    alt="The first design of Weathery's night sky interface darker">
+
+                <p>Another challenge I faced was depicting the night sky with a specific colour. Sky during the day is
+                    usually represented with lighter shade of blue, so I decided to use a darker shade for the night
+                    sky. But "dark" was too dark.</p>
+
+                <img class="weathery-ui" src="images/weathery-night.png"
+                    alt="The final design of Weathery's night sky interface">
+
+                <p>After some research, I learned that night sky or lighting can be depicted with even a lighter shade
+                    of blue &#40; just like how Van Gogh or Miyazaki did it &#41;.</p>
+
+                <p>I went on and created the motion graphics &#40; displayed on top of the page &#41; to showcase how
+                    the interface really works.</p>
+
+                <!--BACK-->
+                <p class="back-button"><a href="index.html">&#8592; back</a></p>
+
+            </div>
+
+        </section>
+
+        <!--Footer-->
+        <div class="container">
+            <footer>
+                <p>Copyright &copy; Chloe Chung 2020</p>
+            </footer>
+        </div>
+
+    </div>
+    <!--WRAPPER End-->
+
+</body>
+
+</html>
