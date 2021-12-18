@@ -27,6 +27,13 @@ h4 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; margin-top: 60px;
 .container { padding: 5% 7%; background: #f9f9f9; }
 .description-container { padding: 10% 20% 2%; background: #f9f9f9; }
 
+.anchor:before {
+    content: ''; display: block;
+    position: relative;
+    width: 0; height: 5em;
+    margin-top: -5em
+}
+
 .separator { display: block; margin: auto; width: 60%; height: 1px; background: #ccc; }
 .square-button {
     padding: 15px 25px; margin: 20px 0px;
