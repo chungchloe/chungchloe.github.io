@@ -187,11 +187,11 @@ footer p { text-align: center; }
 @media screen and (max-width: 800px) {
     /***HOME***/
     #myCanvas { display: none; }
-    #home {
+    /*#home {
         animation: animateBackground infinite ease 10s;
         -moz-animation: animateBackground infinite ease 10s;
         -webkit-animation: animateBackground infinite ease 10s;
-    }
+    }*/
 }
 @media screen and ( max-width: 600px ){
     /***GENERAL CLASS CSS***/
