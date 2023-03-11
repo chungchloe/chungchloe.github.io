@@ -14,263 +14,229 @@
     <link rel="icon" href="/images/logo-small-white.png">
 
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!--StyleSheet-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!--HTML shiv-->
-    <!--[if lt IE 9]>
-            <script src="js/html5shiv.js"></script>
-            <script src="js/html5shiv-printshiv.min.js"></script>
-        <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--jQuery library -->
-    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        function moveScreen(menuName) {
-            $('html , body').animate({
-                scrollTop: $('#' + menuName).offset().top
-            }, 1000);
-        }
-    </script>-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-    <!-- Adds CSS3 Media Queries to older browsers such as IE5+ -->
-    <script src="js/css3-mediaqueries.js"></script>
+    <!--AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
-    <!--Wrapper-->
-    <div id="wrapper">
 
-        <!--Navigation-->
-        <nav class="global-nav">
-            <ul>
-                <li><a class="home-link" href="index.html">chloe chung</a></li>
-                <li><a class="mobile-home-link" href="index.html"><img src="images/logo-small.png"
-                            alt="the main logo for the website which links to the home page"></a></li>
-                <li><a class="nav-link" href="#about">about</a></li>
-                <li><a class="nav-link" href="#work">work</a></li>
-                <li><a class="nav-link" href="#contact">contact</a></li>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" aria-current="page" href="#home">Chloe Chung</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#main">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+              </li>
             </ul>
-        </nav>
-        <!--Navigation End-->
+          </div>
+        </div>
+      </nav>
+    <!--Navigation End-->
+
+    <!--Wrapper-->
+    <div class="container-lg" id="wrapper">
 
         <!--HOME-->
-        <section id="home">
-            <!--Canvas Element-->
-            <div id="canvasWrap" class="canvasWrap">
-                <div class="homepage-headings">
-                    <h1>CHLOE CHUNG</h1>
-                    <h2>Designer / Developer</h2>
-                </div>
-
-                <!--TweenMax Canvas-->
-                <canvas id="myCanvas"></canvas>
-            </div>
+        <section class="section" id="home">
+            <h1 class="animate__animated animate__pulse animate__infinite infinite animate__slower 100s">
+                Chloe
+                <br>
+                Chung
+            </h1>
+            <h2 class="animate__animated animate__infinite infinite animate__pulse animate__slow">Designer</h2>
         </section>
 
         <!--ABOUT-->
-        <section class="anchor" id="about">
-            <div class="container">
-                <h1>Hello,</h1>
-                <p class="about-text">I'm Chloe Chung, a designer/developer whose endeavours are to help find visual and
-                    brand identity, build functional and beautiful websites, and make effective motion graphics.</p>
-                <div class="about-links">
-                    <button class="square-button"><a class="button-link"
-                            href="chungchloe-resume.pdf">Resume</a></button>
-                    <button class="square-button"><a class="button-link"
-                            href="https://www.linkedin.com/in/chloeychung/">LinkedIn</a></button>
+        <section class="section" id="about">
+            <div class="row align-items-center justify-content-evenly">
+                <div class="col-md-7 col-xs-12">
+                    <h2 data-aos="fade-up">About</h2>
+                    <p data-aos="fade-up">I'm a designer and a developer, whose endeavours are to help find visual and
+                        brand identity, build functional and beautiful websites, and make effective motion graphics.</p>
+                </div>
+                <div class="col-md-5 col-xs-12 about-buttons" data-aos="fade-left">
+                    <a class="main-button" href="https://www.linkedin.com/in/chloeychung/">LinkedIn</a>
+                    <a class="main-button" href="#contact" aria-current="page">Contact</a>
                 </div>
             </div>
         </section>
 
-        <!--Separator-->
-        <span class="separator"></span>
-
         <!--WORK-->
-        <section class="anchor" id="work">
-            <div class="container">
-                <h1>Work</h1>
-                <div class="main-work-box">
+        <section class="section" id="main">
+            <h2 data-aos="fade-up">Work</h2>
+            <div class="main-work-box">
 
-                    <!--Humber College-->
-                    <div class="work-box">
-                        <a class="work-visual" href="http://southetobicokeha.com"><img src="images/humber-website.jpg"
-                                alt="Humber College's Housing Affordability Project website"></a>
-                        <div class="work-blurb">
-                            <h2>Humber College's Website for Affordable Housing</h2>
-                            <p>Designed and developed a website that represents and supports the affordable housing
-                                project at Humber College.</p>
-                            <a class="work-link"
-                                aria-label="See the prototype of Humber College's Affordable Housing Project website"
-                                href="https://www.figma.com/proto/a6vBkIbx57V78wkDdVcfsG/South-Etobicoke-Housing-Affordability?node-id=136%3A0&scaling=min-zoom">
-                                <h3>View prototype</h3>
-                            </a>
-                            <a class="work-link" aria-label="Go to Humber College's Affordable Housing Project website"
-                                href="http://southetobicokeha.com">
-                                <h3>View website</h3>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--JCreated-->
-                    <div class="work-box column-reverse">
-                        <div class="work-blurb">
-                            <h2>JCreated</h2>
-                            <p>A videographer and photographer, Jae Sung Lee, came for the website design that would
-                                represent his work and style accurately. HTML and CSS was used to build the website.</p>
-                            <a class="work-link" aria-label="Visit the Jcreated.ca website"
-                                href="jcreated/index.html">
-                                <h3>Visit website</h3>
-                            </a>
-                        </div>
-                        <a class="work-visual" href="jcreated/index.html">
-                            <video poster="images/jcreated.jpg" playsinline="true" autoplay muted
-                                loop src="images/jcreated.mp4">
-                                <source src="images/jcreated.mp4" type="video/mp4">
-                            </video>
-                        </a>
-                    </div>
-
-                    <!--InterVarsity-->
-                    <div class="work-box">
-                        <a class="work-visual" href="ivcf.html"><img src="images/donation-platform.jpg"
-                                alt="A screenshot of InterVarsity's Find a Campus page"></a>
-                        <div class="work-blurb">
-                            <h2>InterVarsity Christian Fellowship</h2>
-                            <p>Maintained more than 10 websites, built new pages to serve all ministries, and redesigned
-                                existing pages, which increased the page visits by more than 90%. Currently working on
-                                making the websites accessible - compliant to the AODA principles.</p>
-                            <a class="work-link" aria-label="View details about the website work for InterVarsity"
-                                href="ivcf.html">
-                                <h3>View details</h3>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--Upon This Love-->
-                    <div class="work-box column-reverse">
-                        <div class="work-blurb">
-                            <h2>Upon This Love Logo Design</h2>
-                            <p>A wedding Coordinator, Upon This Love, was looking to have a logo designed. Worked closely with the coordinator to make sure that the logo precisely represents
-                                her style and missions.</p>
-                            <a class="work-link" aria-label="View details about Upon This Love logo design"
-                                href="utl.html">
-                                <h3>View details</h3>
-                            </a>
-                        </div>
-                        <a class="work-visual" href="utl.html"><img src="images/upon-this-love.png"
+                <!--Upon This Love-->
+                <div class="work-box">
+                    <div class="row align-items-center justify-content-evenl" data-aos="fade-right">
+                        <div class="col-md-6 col-xs-12">
+                            <a class="work-visual" href="utl.html"><img src="images/upon-this-love.png"
                                 alt="Logo design for Upon This Love"></a>
+                        </div>
+                        <div class="col-md-6 col-xs-12 work-blurb" data-aos="fade-left">
+                            <h3>Upon This Love</h3>
+                            <p>Brand design and website design for Upon This Love. Worked closely with the coordinator to make designs that accurately represents her style and missions.</p>
+                            <a class="work-link" href="https://www.uponthislove.com/">View Website</a>
+                            <a class="work-link" href="images/upon-this-love-brand-guidelines.pdf">View Brand Guidelines</a>
+                        </div>
                     </div>
+                </div>
 
-                    <!--Motion Graphics-->
-                    <div class="work-box">
-                        <a class="work-visual" href="motion.html">
-                            <video poster="images/nhf.jpg" playsinline="true" autoplay muted loop
-                                src="images/nhf.mp4">
-                                <source src="images/nhf.mp4" type="video/mp4">
-                            </video>
-                        </a>
-                        <div class="work-blurb">
-                            <h2>Motion Graphics</h2>
+                <!--Food Day Canada-->
+                <div class="work-box">
+                    <div class="row align-items-center justify-content-evenly column-reverse">
+                        <div class="col-md-6 col-xs-12 work-blurb" data-aos="fade-right">
+                            <h3>Food Day Canada</h3>
+                            <p>Website redesign work for Food Day Canada with improved UI and UX while maintaining the consistency of their visual identity.</p>
+                            <a class="work-link" href="https://www.figma.com/file/ulbeOehc2HzNB9w8zvOJUm/Food-Day-Canada?node-id=0%3A1&t=mz4UvkBga3rzaBvM-1">
+                                View prototype
+                            </a>
+                            <a class="work-link" href="https://www.fooddaycanada.ca/"> View website</a>
+                        </div>
+                        <div class="col-md-6 col-xs-12" data-aos="fade-left">
+                            <a class="work-visual" href="https://www.fooddaycanada.ca/"><img src="images/food-day-canada.png"
+                                alt="Food Day Canada website"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Humber College-->
+                <div class="work-box">
+                    <div class="row align-items-center justify-content-evenly">
+                        <div class="col-md-6 col-xs-12" data-aos="fade-right">
+                            <a class="work-visual" href="http://southetobicokeha.com"><img src="images/humber.png"
+                                alt="Humber College's Housing Affordability Project website"></a>
+                        </div>
+                        <div class="col-md-6 col-xs-12 work-blurb" data-aos="fade-left">
+                            <h3>Humber College</h3>
+                            <p>Web design and development work for the affordable housing project at Humber College.</p>
+                            <a class="work-link"
+                                href="https://www.figma.com/proto/a6vBkIbx57V78wkDdVcfsG/South-Etobicoke-Housing-Affordability?node-id=136%3A0&scaling=min-zoom">
+                                View prototype
+                            </a>
+                            <a class="work-link"
+                                href="http://southetobicokeha.com">
+                                View website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--JCreated-->
+                <div class="work-box">
+                    <div class="row align-items-center justify-content-evenly column-reverse">
+                        <div class="col-md-6 col-xs-12 work-blurb" data-aos="fade-right">
+                            <h3>JCreated</h3>
+                            <p>Web design and development work for JCreated, A videographer and photographer. Worked closely with the videographer to represent his work and style accurately.</p>
+                            <a class="work-link" href="jcreated/index.html">
+                                Visit website
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xs-12" data-aos="fade-left">
+                            <a class="work-visual" href="jcreated/index.html"><img src="images/jcreated.png"
+                                alt="Jcreated website"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Motion Graphics-->
+                <div class="work-box">
+                    <div class="row align-items-center justify-content-evenly">
+                        <div class="col-md-6 col-xs-12" data-aos="fade-right">
+                            <a class="work-visual" href="motion.html">
+                                <video poster="images/nhf.jpg" playsinline="true" autoplay muted loop
+                                    src="images/nhf.mp4">
+                                    <source src="images/nhf.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xs-12 work-blurb" data-aos="fade-left">
+                            <h3>Motion Graphics</h3>
                             <p>Various motion graphics work made with After Effects done to provide effecitve
                                 storytelling or user interaction demonstration.</p>
-                            <a class="work-link" aria-label="View details about the motion graphics work"
-                                href="motion.html">
-                                <h3>View details</h3>
+                            <a class="work-link" href="motion.html">
+                                View all
                             </a>
                         </div>
                     </div>
-
-                    <!--Codepen-->
-                    <div class="work-box column-reverse">
-                        <div class="work-blurb">
-                            <h2>Codepen</h2>
-                            <p>Some development exercises to keep them skills polished.</p>
-                            <a class="work-link" href="https://codepen.io/chungchloe">
-                                <h3>Let's see what Chloe wrote!</h3>
-                            </a>
-                        </div>
-                        <img class="work-visual" src="images/codepen.jpg"
-                            alt="An illustration of a character done with CSS on Codepen">
-                    </div>
-
-                    <!--Dribbble-->
-                    <div class="work-box">
-                        <a class="work-visual" href="https://dribbble.com/chungchloe"><img src="images/polygon.jpg"
-                                alt="A polygon portrait illustration"></a>
-                        <div class="work-blurb">
-                            <h2>Dribbble</h2>
-                            <p>Some design exercises to keep them skills polished. Click
-                                below links to see them.</p>
-                            <a class="work-link" href="https://dribbble.com/chungchloe">
-                                <h3>Yes, I will see your Dribbble posts</h3>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!--Daily UI-->
-                    <!--<div class="work-box column-reverse">
-                        <div class="work-blurb">
-                            <h2>Daily UI</h2>
-                            <p>Daily UI exercises to keep up the design skills.</p>
-                        </div>
-                        <video poster="images/daily-ui.png" playsinline="true" autoplay muted
-                            loop src="images/daily-ui-009-music-player.mp4">
-                            <source src="images/daily-ui-009-music-player.mp4" type="video/mp4">
-                        </video>
-                    </div>-->
-
-
                 </div>
-                <!--Container END-->
-            </div>
 
-            <!--Separator-->
-            <span class="separator"></span>
+            </div><!--Main Work Container END-->
 
         </section>
 
         <!--Contact-->
-        <section class="anchor" id="contact">
-            <div class="container">
-                <h1 class="contact-header">Let's Get In Touch.</h1>
-                <h2 class="contact-subheader">Are you looking for a freelancer, or want to work together on a project?
-                    Let's talk!</h2>
-                <form class="contact-form" id="contact-form" action="https://formspree.io/chungchloe@pm.me"
+        <section class="section" id="contact">
+            <h2 class="contact-header" data-aos="fade-up">Contact</h2>
+            <p data-aos="fade-up">Are you looking for a freelancer, or want to work together on a project?
+                Let's talk!</p>
+            <button type="button" class="btn btn-primary action-button" data-bs-toggle="modal" data-bs-target="#Modal" data-aos="fade-up">Leave a Message</button>
+            
+            <!--contact form-->
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="ModalLabel">Leave a Message</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form class="contact-form" id="contact-form" action="https://formspree.io/chungchloe@pm.me"
                     method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="name" aria-label="Type name">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" aria-label="Type name">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="_replyto" placeholder="email" aria-label="Type email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="_replyto" placeholder="john@example.com" aria-label="Type email">
 
-                    <label for="message">Message</label>
-                    <input type="text" id="message" name="message" placeholder="message" aria-label="Type message">
+                            <label for="message">Message</label>
+                            <input type="text" id="message" name="message" placeholder="Your message" aria-label="Type message">
 
-                    <input type="submit" id="submit" value="submit">
-                </form>
+                            <input type="submit" id="submit" value="Send">
+                        </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!--Footer-->
-        <div class="footer">
-            <footer>
-                <p>Copyright &copy; Chloe Chung 2020</p>
-            </footer>
-        </div>
+    </div><!--Wrapper End-->
 
-        <!--TweenMAx JavaScript-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <!--Footer-->
+    <section class="footer container-fluid">
+        <footer>
+            <p>Chloe Chung &copy; All rights reserved.</p>
+        </footer>
+    </section>
 
-        <!--JavaScript: Background Animation-->
-        <script src="js/custom.js"></script>
-
-    </div>
-    <!--Wrapper End-->
+    <!--JavaScript-->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

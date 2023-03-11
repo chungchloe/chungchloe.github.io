@@ -11,68 +11,76 @@
     <title>chloe chung - designer, developer</title>
 
     <!--Icon-->
-    <link rel="icon" href="http://chungchloe.com/images/logo-small-white.png">
+    <link rel="icon" href="/images/logo-small-white.png">
 
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!--StyleSheet-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!--HTML shiv-->
-    <!--[if lt IE 9]>
-            <script src="js/html5shiv.js"></script>
-            <script src="js/html5shiv-printshiv.min.js"></script>
-        <![endif]-->
-
-    <!--TweenMAx JavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <!-- Adds CSS3 Media Queries to older browsers such as IE5+ -->
-    <script src="js/css3-mediaqueries.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        function moveScreen(menuName) {
-            $('html , body').animate({
-                scrollTop: $('#' + menuName).offset().top
-            }, 1000);
-        }
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-    </script>
+    <!--AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
 
-    <!--WRAPPER-->
-    <div id="wrapper">
-
-        <!--Navigation-->
-        <nav class="global-nav">
-            <ul>
-                <li><a class="home-link" href="index.html">chloe chung</a></li>
-                <li><a class="mobile-home-link" href="index.html"><img src="images/logo-small.png"
-                            alt="the main logo for the website which links to the home page"></a></li>
-                <li><a class="nav-link" href="index.html#about">about</a></li>
-                <li><a class="nav-link" href="index.html#work">work</a></li>
-                <li><a class="nav-link" href="index.html#contact">contact</a></li>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Chloe Chung</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#main">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contact">Contact</a>
+              </li>
             </ul>
-        </nav>
-        <!--Navigation End-->
+          </div>
+        </div>
+      </nav>
+    <!--Navigation End-->
+
+    <!--Wrapper-->
+    <div class="container-lg" id="wrapper">
+
+        <!--INTRO-->
+        <section class="section" id="intro">
+            <div class="row align-items-center justify-content-evenly">
+                <div class="col-md-7 col-xs-12">
+                    <h1 class="inner-h1 animate__animated animate__pulse animate__infinite infinite animate__slower 100s">
+                        Motion Graphics
+                    </h1>
+                </div>
+                <div class="col-md-5 col-xs-12 about-buttons" data-aos="fade-left">
+                    <h2 class="inner-h2" data-aos="fade-up">Motion Design Work Made using Illustrator and After Effects</h2>
+                </div>
+            </div>
+        </section>
 
         <!--ABOUT-->
-        <section id="description">
-
-            <div class="description-container">
-
-                <h2>Motion Graphics</h2>
-                <h3>Motion Design Work Made with Illustrator and After Effects</h3>
-
+        <section class="section description-container" id="main">
 
                 <!--New Hope-->
-                <h4>New Hope Fellowship Downtown</h4>
+                <h3>New Hope Fellowship Downtown</h3>
                 <p>As a media team volunteer at <a href="https://newhopefellowship.ca/">New Hope Fellowship</a>, the
                     English ministry of the parent church Light Presbyterian Church, I had an opportunity to make a few
                     motion graphics to convey the missions of the creative team, to promote overseas missions and more.
@@ -85,16 +93,9 @@
                     <source src="images/nhf.mp4" type="video/mp4">
                 </video>
 
-                <p>To let the members of the church know that there will be overseas missions opportunities, I was asked
-                    to make an effective animation in order to convey the message well.</p>
-
                 <iframe width="862" height="485" src="https://www.youtube.com/embed/EJAtvtb-nok" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-
-                <p>New Hope Fellowship wanted their own creative team to understand what the objective is for the
-                    creative ministry. I was asked to make the animation that matches the voice-over with clear and
-                    impactful visuals.</p>
 
                 <iframe width="754" height="424" src="https://www.youtube.com/embed/sp5ofbZdFdI" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -102,7 +103,7 @@
 
 
                 <!--Automotive UI-->
-                <h4>Automotive UI</h4>
+                <h3>Automotive UI</h3>
                 <p>Implementations of augmented reality in cars have been proposed and suggested in all good intentions
                     to improve our lives such as smart car windows. But have there been any for emergency vehicles,
                     which is actually so close in touch with human lives?</p>
@@ -121,9 +122,6 @@
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
 
-                <p>Once the paramedics have treated the patient, the dahsboard, which is shown in the video below, will
-                    guide them to the nearest hospital that will provide relevant care.</p>
-
                 <video poster="images/automotive.jpg" playsinline="true" autoplay muted loop
                     src="images/automotive.mp4">
                     <source src="images/automotive.mp4" type="video/mp4">
@@ -134,12 +132,11 @@
                         href="https://www.auto-ui.org">Automotive User Interface Conference</a> which took place in
                     Toronto, Ontario.</p>
 
-                <button class="square-button"><a class="button-link"
-                        href="https://dl.acm.org/authorize.cfm?key=N667343">Read Paper</a></button>
+                <a class="main-button" href="https://dl.acm.org/authorize.cfm?key=N667343">Read Paper</a>
 
 
                 <!--Weathery-->
-                <h4>Weathery</h4>
+                <h3>Weathery</h3>
                 <p>Weathery is a smartwatch interface design done as a personal project.</p>
 
                 <p>It is easy to forget what temperature, or what kind of weather it was supposed to be today. Weathery,
@@ -151,35 +148,27 @@
                     <source src="images/weathery-full.mp4" type="video/mp4">
                 </video>
 
-                <p>Having numbers can help, but it is not as efficient as the visuals. Weathery shows you the current
-                    weather, and the weather in the near future on your watch screen.</p>
-
                 <!--Video-->
                 <video poster="images/weathery.jpg" playsinline="true" autoplay muted loop
                     src="images/weathery-temp.mp4">
                     <source src="images/weathery-temp.mp4" type="video/mp4">
                 </video>
 
-                <p>But of course, numbers do matter. You never know if it is going to be extremely cold under a sunny
-                    sky. On Weathery, you can just tap on the screen to see the temperature and the date.</p>
-
                 <!--BACK-->
-                <p class="back-button"><a href="index.html">&#8592; back</a></p>
-
-            </div>
-
+                <a class="back-button" href="index.html">&#8592; back</a>
         </section>
 
-        <!--Footer-->
-        <div class="container">
-            <footer>
-                <p>Copyright &copy; Chloe Chung 2020</p>
-            </footer>
-        </div>
+    </div><!--WRAPPER End-->
 
-    </div>
-    <!--WRAPPER End-->
+    <!--Footer-->
+    <section class="footer container-fluid">
+        <footer>
+            <p>Chloe Chung &copy; All rights reserved.</p>
+        </footer>
+    </section>
 
+    <!--JavaScript-->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
