@@ -40,7 +40,12 @@ h1 {
 }
 
 h2 {
-    font-size: 300px;
+    font-size: 20vw;
+}
+@media screen and (min-width:1400px) {
+    h2 {
+        font-size: 300px;
+    }
 }
 
 h3 {
@@ -176,7 +181,7 @@ h3 {
 }
 
 #about p {
-    margin-top: -10%;
+    margin-top: -8%;
 }
 
 @media screen and (min-width:768px) {
