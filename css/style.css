@@ -5,10 +5,11 @@ html {
 
 body {
     color: #333;
+    background: #EEE8E4;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: #EEE8E4;
+    overflow-x: hidden;
 }
 
 a {
@@ -140,6 +141,9 @@ h3 {
     font-family: 'DM Serif Display', serif;
     font-size: 24px;
     transition: all, .5s;
+}
+.navbar-collapse {
+    background-color: #EEE8E4;
 }
 
 
