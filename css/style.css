@@ -49,6 +49,8 @@ h3 {
 
 
 /***GENERAL CLASS CSS***/
+.aos-init:not(.aos-animate):after {position: fixed;}
+
 .section {
     margin-bottom: 5.625em;
 }
