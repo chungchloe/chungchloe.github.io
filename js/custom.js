@@ -8,9 +8,7 @@ function moveScreen(menuName) {
 }
 
 //Animation on Scroll
-window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
+$('[data-aos]').parent().addClass('hideOverflowOnMobile');
 
 //Nav Animation
 $(window).scroll(function () {
