@@ -49,8 +49,6 @@ h3 {
 
 
 /***GENERAL CLASS CSS***/
-.aos-init:not(.aos-animate):after {position: fixed;}
-
 .section {
     margin-bottom: 5.625em;
 }
@@ -343,7 +341,7 @@ h3 {
 
 
 /***MEDIA QUEREIS***/
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     h1 {
         font-size: 22vw;
     }
@@ -354,6 +352,10 @@ h3 {
 
     .main-work-box {
         margin-top: -10em;
+    }
+
+    .hideOverflowOnMobile {
+        overflow: hidden;
     }
 }
 
