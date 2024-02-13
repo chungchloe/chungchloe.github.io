@@ -11,7 +11,7 @@ function moveScreen(menuName) {
 $('[data-aos]').parent().addClass('hideOverflowOnMobile');
 
 //Nav Animation
-$(window).scroll(function () {
+/*$(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll < 300) {
         $('.navbar').css('background', '#EEE8E4');
@@ -26,4 +26,4 @@ $(window).scroll(function () {
         $('.navbar .navbar-brand').css('color', '#fff');
         $('.navbar .navbar-toggler').css('background-color', '#fff');
     }
-});
+});*/
