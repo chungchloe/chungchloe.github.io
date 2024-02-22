@@ -16,7 +16,7 @@ p { font-size: 1.25rem; }
 video, iframe { width: 100%; }
 
 /*Headings*/
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #000;
     font-family: 'Pixelify Sans', sans-serif;
     text-align: center;
@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 h1 { font-size: 8rem; }
 h2, h3 { font-size: 2.25rem; }
-
+h4 { text-align: left; }
 
 /***************************** GENERAL CSS CLASS *****************************/
 .section { margin: 3.125em 0; }
@@ -88,12 +88,12 @@ hr.separator {
     gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    width:80%;
 }
 
+.work-box { border:3px solid #000; border-radius: 20px; padding:20px; }
 .work-box a { text-decoration: none; }
-
-.work-box img, .work-box video { width: 100%; transition: all, .5s; }
-.work-box img:hover, .work-box video:hover { width:102%; }
+.work-box img, .work-box video { width: 100%; }
 
 .work-box h3 { text-align: left; }
 .work-box h3:hover { text-decoration: underline; }
@@ -143,7 +143,7 @@ hr.separator {
     transition: all, .5s;
 }
 #contact .btn-primary:hover {
-    letter-spacing: 2px;
+    background-color: #000;
 }
 
 /*Modal*/
@@ -204,7 +204,7 @@ hr.separator {
     transition: all, .5s;
 }
 .contact-form input[type=submit]:hover {
-    letter-spacing: 2px;
+    background-color:#000;
 }
 
 
@@ -231,7 +231,7 @@ hr.separator {
     .main-work-box { display: flex; flex-direction: column; }
     .work-box img, .work-box video { width: 80%; margin: 0 auto; display: block; }
     .work-box img:hover, .work-box video:hover { width: 80%; }
-    .work-box h3 { text-align: center; }
+    .work-box h3, .work-box h4 { text-align: center; }
 }
 
 @media (max-width:991px) {
