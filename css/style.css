@@ -52,6 +52,25 @@ hr.separator {
 .nav-item { margin: 0 1rem; }
 .nav-link:hover { text-decoration: underline; }
 
+/***************************** CONTAINER *****************************/
+.container-lg { position: relative; }
+svg {
+    animation: 3s infinite alternate ease-in pulse;
+    position: absolute; top:200px;
+    z-index: -1;
+    width: 100%;
+}
+svg + svg {
+    animation: 4s infinite alternate ease-in pulse;
+    top:unset; right: 0; bottom:500px;
+}
+
+/* The animation code */
+@keyframes pulse {
+  from {width: 100%;}
+  to {width:80%;}
+}
+
 /***************************** HOME *****************************/
 #home {
     display: flex;
@@ -91,7 +110,7 @@ hr.separator {
     width:80%;
 }
 
-.work-box { border:3px solid #000; border-radius: 20px; padding:20px; }
+.work-box { background-color:rgba(192,207,178,.8); border:3px solid #000; border-radius: 20px; padding:20px; }
 .work-box a { text-decoration: none; }
 .work-box img, .work-box video { width: 100%; }
 
