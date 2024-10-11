@@ -55,13 +55,13 @@ hr.separator {
 /***************************** CONTAINER *****************************/
 .container-lg { position: relative; }
 svg {
-    animation: 3s infinite alternate ease-in pulse;
-    position: absolute; top:200px;
+    animation: pulse 3s infinite alternate ease-in, turn 30s infinite normal ease-in;
+    position: absolute; top:200px; right:0;
     z-index: -1;
-    width: 100%;
+    width: 80%;
 }
 svg + svg {
-    animation: 4s infinite alternate ease-in pulse;
+    animation: pulse 4s infinite alternate ease-in, turn 20s infinite normal ease-in;
     top:unset; right: 0; bottom:500px;
 }
 
@@ -69,6 +69,11 @@ svg + svg {
 @keyframes pulse {
   from {width: 100%;}
   to {width:80%;}
+}
+@keyframes turn {
+    0 {transform:rotate(0deg);}
+    50% {transform:rotate(180deg);}
+    100% {transform:rotate(360deg);}
 }
 
 /***************************** HOME *****************************/
