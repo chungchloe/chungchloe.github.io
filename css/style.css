@@ -307,4 +307,5 @@ h3 { font-size: 2.25rem; }
     h2 { font-size: 25vw; }
     #home { height:400px !important; }
     #myCanvas { height:600px !important; opacity:.3; }
+    .work-box img, .work-box video { box-shadow: none; }
 }
