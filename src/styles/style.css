@@ -5,6 +5,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    transition: all, .5s;
 }
 body {
     color: #fff;
